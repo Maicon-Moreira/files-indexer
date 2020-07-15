@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('./fonts/Roboto-Regular.ttf') format('truetype');
+    /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #0095ff;
+    font-family: Roboto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #ffffff77;
+    width: 95%;
+    height: 95%;
+    border-radius: 30px;
+    padding: 20px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+#container {
+    overflow: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    height: 500px;
+}
+
+.element {
+    width: 98%;
+    /* height: 100px; */
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.element>* {
+    margin-bottom: 5px;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+
+.folder {
+    background-color: #d1d100;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.file {
+    border: 2px dashed black;
+}
+
+h5 {
+    margin: 10px;
+}
+
+input {
+    height: 40px;
+    width: 300px;
+    font-size: 30px;
+}
