@@ -91,14 +91,14 @@ def index_directory(directory):
     return [index, size, num_files]
 
 
-(index, size, num_files) = index_directory('/home/maicon')
+(index, size, num_files) = index_directory('/home')
 # (index, size, num_files) = index_directory('..')
 
 print(f'{size} bytes com {num_files} arquivos')
 print(f'{get_size(index)} bytes de RAM utilizados')
 
-with open('./webpage/data.js', 'w') as file:
-    file.write('const data = '+json.dumps({
+with open('./webpage/src/data.js', 'w') as file:
+    file.write('module.exports = '+json.dumps({
         'index': index,
         'size': size,
         'num_files': num_files

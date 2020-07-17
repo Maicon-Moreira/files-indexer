@@ -1,0 +1,152 @@
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-page {
+  height: 95%;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  background-color: #ffffff77;
+  border-radius: 50px;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 90%;
+  margin-top: 10px;
+}
+
+.search-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-bar input {
+  width: 300px;
+  height: 30px;
+  font-size: 20px;
+  margin-right: 40px;
+  border: none;
+  border-radius: 10px;
+  padding-left: 10px;
+  vertical-align: middle;
+}
+
+.search-bar button {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  height: 30px;
+  width: 100px;
+  border: none;
+  vertical-align: middle;
+  border-radius: 10px;
+}
+
+nav {
+  height: 90%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.container {
+  height: 95%;
+  overflow: scroll;
+  overflow-x: hidden;
+  width: 95%;
+}
+
+.result {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  /* padding: 5px; */
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 10px;
+}
+
+.left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 70%;
+  padding: 5px;
+  border: 1px solid white;
+}
+
+.left > * {
+  width: 20%;
+  overflow: hidden;
+  margin-right: 5px;
+  white-space: nowrap;
+}
+
+.size {
+  width: 40px;
+}
+
+.folder {
+  background-color: #d1d100;
+}
+
+.file {
+  background-color: white;
+}
+
+.path {
+  font-size: 10px;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+  margin-bottom: 10px;
+}
+
+.return {
+  height: 30px;
+  width: 50px;
+  border: 0;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.right {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  height: 100%;
+  background-color: black;
+}
+
+.size {
+  text-align: center;
+  z-index: 100000;
+}
+
+.background {
+  /* position: absolute; */
+  background-color: #0095ff;
+  height: 23px;
+}
