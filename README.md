@@ -17,7 +17,7 @@ Pesquisa do termo "teste" dentro da minha pasta /home/maicon realizado em **0.08
 
 ## Como usar
 
-Crie o arquivos de indexação:
+Crie o arquivo de indexação:
 
     python3 index_creator.py 
 
@@ -28,6 +28,10 @@ Inicie o servidor express:
 Inicie o website react:
 
     cd webpage && yarn start
+
+E pronto, o servidor local http://localhost:3000 abrirá no seu navegador.
+
+Fique a vontade para colocar a inicialização do servidor express junto com a do seu sistema ou utilizar algum dns local para o servidor React.
 
 
 
