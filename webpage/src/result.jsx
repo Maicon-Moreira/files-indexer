@@ -16,13 +16,13 @@ export default function (props) {
     if (size < 1024 ** 4) return `${(size / 1024 ** 3).toFixed(0)} GB`;
   }
 
-  // function convertTime(time) {
-  //   return new Date(time / 10 ** 6).toLocaleString();
-  // }
-
   function convertTime(time) {
-    return new Date(new Date() - new Date(time / 10 ** 6)).toLocaleString();
+    return new Date(time / 10 ** 6).toLocaleString();
   }
+
+  // function convertTime(time) {
+  //   return new Date(new Date() - new Date(time / 10 ** 6)).toLocaleString();
+  // }
 
   return (
     <div

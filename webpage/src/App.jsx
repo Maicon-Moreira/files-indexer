@@ -8,7 +8,7 @@ const api = axios.create({
 });
 
 function App() {
-  const [searchText, setSearchText] = useState("maicon");
+  const [searchText, setSearchText] = useState("");
   const [results, setResults] = useState([]);
   const [totalResults, setTotalResults] = useState(-1);
   const [timeElapsed, setTimeElapsed] = useState(-1);
@@ -73,6 +73,7 @@ function App() {
           <input
             type="text"
             value={searchText}
+            placeholder='Pesquise aqui'
             onChange={(e) => setSearchText(e.target.value)}
           />
           <button onClick={handleSearchButton}>Pesquisar</button>
@@ -87,6 +88,19 @@ function App() {
             {totalResults >= 0 &&
               `${totalResults} resultados em ${timeElapsed} segundos.`}
           </h5>
+        </div>
+        <div className="header">
+          <div className="header-left">
+            <div className="header-item">Nome</div>
+            <div className="header-item">Localização</div>
+            <div className="header-item">Último acesso</div>
+            <div className="header-item">Última modificação</div>
+            <div className="header-item">Data de criação</div>
+            <div className="header-item-size">Tamanho</div>
+          </div>
+          <div className="header-right">
+            <div className="header-item">Barra tamanho relativo</div>
+          </div>
         </div>
         <div className="container">
           {results.slice(0, 300).map((result) => (

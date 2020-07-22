@@ -43,6 +43,12 @@ header {
   border-radius: 10px;
   padding-left: 10px;
   vertical-align: middle;
+  transition: all 0.2s;
+}
+
+.search-bar input:hover {
+  background-color: black;
+  color: white;
 }
 
 .search-bar button {
@@ -54,6 +60,12 @@ header {
   border: none;
   vertical-align: middle;
   border-radius: 10px;
+  transition: all 0.2s;
+}
+
+.search-bar button:hover {
+  background-color: white;
+  color: black;
 }
 
 nav {
@@ -80,6 +92,12 @@ nav {
   border-radius: 5px;
   margin-right: 10px;
   font-size: 10px;
+  height: 23px;
+  cursor: pointer;
+}
+
+.result:hover {
+  font-weight: bold;
 }
 
 .left {
@@ -99,7 +117,7 @@ nav {
 }
 
 .size {
-  width: 40px;
+  width: 50px;
 }
 
 .folder {
@@ -129,6 +147,12 @@ nav {
   border: 0;
   background-color: white;
   border-radius: 10px;
+  transition: all 0.2s;
+}
+
+.return:hover {
+  background-color: black;
+  color: white
 }
 
 .right {
@@ -149,4 +173,46 @@ nav {
   /* position: absolute; */
   background-color: #0095ff;
   height: 23px;
+}
+
+.header {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  padding-right: 25px;
+}
+
+.header-left {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 10px;
+  padding-right: 6px;
+  padding-left: 6px;
+}
+
+.header-left > * {
+  width: 20%;
+  overflow: hidden;
+  margin-right: 5px;
+  white-space: nowrap;
+}
+
+.header-right {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 10px;
+}
+
+.header-item-size {
+  width: 50px;
+}
+
+button {
+  cursor: pointer;
 }

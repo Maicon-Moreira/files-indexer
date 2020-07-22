@@ -49,7 +49,6 @@ app.post('/search', (req, res) => {
   while (path.length > 0) {
     let found = false
     const nextPath = path.shift()
-    console.log(nextPath)
 
     for (const directory of searchDirectory) {
       if (directory.type == 'folder' && directory.name == nextPath) {
@@ -78,7 +77,6 @@ app.post('/entries', (req, res) => {
   while (path.length > 0) {
     let found = false
     const nextPath = path.shift()
-    console.log(nextPath)
 
     for (const directory of searchDirectory) {
       if (directory.type == 'folder' && directory.name == nextPath) {

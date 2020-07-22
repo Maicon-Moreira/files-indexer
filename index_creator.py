@@ -97,9 +97,10 @@ def index_directory(directory):
 print(f'{size} bytes com {num_files} arquivos')
 print(f'{get_size(index)} bytes de RAM utilizados')
 
-with open('./webpage/src/data.js', 'w') as file:
+with open('./server/src/data.js', 'w') as file:
     file.write('module.exports = '+json.dumps({
         'index': index,
         'size': size,
         'num_files': num_files
     }))
+    print('salvo em ./server/src/data.js')
